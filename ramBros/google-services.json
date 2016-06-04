@@ -1,0 +1,66 @@
+{
+  "project_info": {
+    "project_number": "1085561287998",
+    "firebase_url": "https://api-project-1085561287998.firebaseio.com",
+    "project_id": "api-project-1085561287998",
+    "storage_bucket": "api-project-1085561287998.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085561287998:android:3c102459dbd26243",
+        "android_client_info": {
+          "package_name": "com.burntdragon.rambros"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1085561287998-qkbgea3f3apikug0hoh8g5e930mps0j3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.burntdragon.rambros",
+            "certificate_hash": "D7593EEBB824B1A061922719D80BC75A07A20A5D"
+          }
+        },
+        {
+          "client_id": "1085561287998-sgu0m72e6ebqg29msm47nk4mn0bte4jl.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "1085561287998-69mfkked7lnk58ltl6r9qqd6rl53qq6d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKgl8hzwe5wRYbnWxoC9jdUqQHEB6jfqY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1085561287998-sgu0m72e6ebqg29msm47nk4mn0bte4jl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1085561287998-v971g4oc9oq1h3imcsdofdg869524tuq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.burntdragon.rambros"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

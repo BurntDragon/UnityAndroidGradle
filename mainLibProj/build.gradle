@@ -1,0 +1,33 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 23
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    //jar libraries
+    compile fileTree(dir: 'libs', include:['*.jar'])
+
+    //Google play libraries
+    compile ('com.google.android.gms:play-services-auth-base:9.0.1')
+    compile ('com.google.android.gms:play-services-base:9.0.1')
+    compile ('com.google.android.gms:play-services-basement:9.0.1')
+    compile ('com.google.android.gms:play-services-drive:9.0.1')
+    compile ('com.google.android.gms:play-services-games:9.0.1')
+    compile ('com.google.android.gms:play-services-nearby:9.0.1')
+    compile ('com.google.android.gms:play-services-plus:9.0.1')
+    compile ('com.google.android.gms:play-services-tasks:9.0.1')
+}

@@ -1,0 +1,67 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From MainLibProj:
+* AndroidManifest.xml
+From Soomla:
+* AndroidManifest.xml
+From SoomlaShared:
+* AndroidManifest.xml
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In MainLibProj:
+* libs\play-games-plugin-support.jar => mainLibProj\libs\play-games-plugin-support.jar
+In Soomla:
+* libs\AndroidProfile.jar => soomla\libs\AndroidProfile.jar
+* libs\AndroidStore.jar => soomla\libs\AndroidStore.jar
+* libs\AndroidStoreGooglePlay.jar => soomla\libs\AndroidStoreGooglePlay.jar
+* libs\IInAppBillingService.jar => soomla\libs\IInAppBillingService.jar
+* libs\SoomlaAndroidCore.jar => soomla\libs\SoomlaAndroidCore.jar
+* libs\UnityAndroidProfile.jar => soomla\libs\UnityAndroidProfile.jar
+* libs\UnityAndroidStore.jar => soomla\libs\UnityAndroidStore.jar
+* libs\UnitySoomlaAndroidCore.jar => soomla\libs\UnitySoomlaAndroidCore.jar
+In SoomlaShared:
+* libs\keeva-1.0.1.jar => soomlaShared\libs\keeva-1.0.1.jar
+* libs\square-otto-1.3.2.jar => soomlaShared\libs\square-otto-1.3.2.jar
+In Ram Bros:
+* AndroidManifest.xml => ramBros\src\main\AndroidManifest.xml
+* assets\ => ramBros\src\main\assets\
+* libs\armeabi-v7a\libgpg.so => ramBros\src\main\jniLibs\armeabi-v7a\libgpg.so
+* libs\armeabi-v7a\libmain.so => ramBros\src\main\jniLibs\armeabi-v7a\libmain.so
+* libs\armeabi-v7a\libmono.so => ramBros\src\main\jniLibs\armeabi-v7a\libmono.so
+* libs\armeabi-v7a\libunity.so => ramBros\src\main\jniLibs\armeabi-v7a\libunity.so
+* libs\bolts-applinks-1.3.0.jar => ramBros\libs\bolts-applinks-1.3.0.jar
+* libs\bolts-tasks-1.3.0.jar => ramBros\libs\bolts-tasks-1.3.0.jar
+* libs\support-annotations-23.1.1.jar => ramBros\libs\support-annotations-23.1.1.jar
+* libs\unity-classes.jar => ramBros\libs\unity-classes.jar
+* libs\x86\libgpg.so => ramBros\src\main\jniLibs\x86\libgpg.so
+* libs\x86\libmain.so => ramBros\src\main\jniLibs\x86\libmain.so
+* libs\x86\libmono.so => ramBros\src\main\jniLibs\x86\libmono.so
+* libs\x86\libunity.so => ramBros\src\main\jniLibs\x86\libunity.so
+* res\ => ramBros\src\main\res\
+* src\ => ramBros\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

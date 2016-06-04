@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.burntdragon.rambros"
+        minSdkVersion 15
+        targetSdkVersion 23
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("C:\\projects\\Unity\\Toothy\\burntdragon.keystore")
+            storePassword "antegamisou"
+            keyAlias "rambros"
+            keyPassword "antegamisou"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.release
+        }
+    }
+}
+
+dependencies {
+    //project libraries
+    compile project(':mainLibProj')
+    compile project(':notification')
+
+    //jar libraries
+    compile fileTree(dir: 'libs', include:['*.jar'])
+
+    //aar libraries
+    compile(name: 'facebook-android-sdk-4.9.0', ext: 'aar')
+    compile(name: 'facebook-android-wrapper-7.4.0', ext: 'aar')
+    compile(name: 'unity-ads', ext: 'aar')
+
+    //Google support libraries
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:cardview-v7:23.4.0'
+    compile 'com.android.support:support-annotations:23.4.0'
+
+    //firebase library
+    compile 'com.google.firebase:firebase-core:9.0.1'
+    compile 'com.google.firebase:firebase-messaging:9.0.1'
+    compile 'com.google.firebase:firebase-crash:9.0.1'
+}
+
+// ADD THIS AT THE BOTTOM
+apply plugin: 'com.google.gms.google-services'
